@@ -19,3 +19,62 @@
     background-repeat: no-repeat;
     cursor: pointer;
 }
+
+.toggle.active {
+    background: #000 url('../images/close-white.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+section {
+    padding: 100px;
+    min-height: 100vh;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.banner .imgSidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+}
+
+.banner .imgSidebar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+}
+
+.banner .contentBx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.logoTexT {
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: #000;
+    color: #fff; 
+}
