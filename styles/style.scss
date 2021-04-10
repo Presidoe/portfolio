@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-    margin:  0;
+    // margin:  0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -73,7 +73,7 @@ section {
 
 .logoTexT {
     position: absolute;
-    top: 40px;
+    top: 10px;
     left: 100px;
     font-size: 1.2em;
     text-transform: uppercase;
@@ -188,6 +188,7 @@ section {
 .title {
     width: 100%; 
     text-align: center;
+    // padding: 2.5rem;
 }
 
 .title h2 {
@@ -200,19 +201,101 @@ section {
 
 .title p {
    max-width: 700px;
-   display: inline-block; 
+   display: inline-block;   
+   
 }
 
 .title h2::before {
     content: '';
     position: absolute;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     bottom: -10px;
     width: 60px;
     height: 4px;
     background-color: #000;
 }
+.title.white h2,
+.title.white p {
+    color: #fff;
+}
+
+.title.white h2::before {
+    background: #fff;
+}
+
+.about {
+     background: #000;
+}
+
+.about .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.about .content .textBx {
+    min-width: 49%;
+    width: 49%;
+}
+
+.about .content .textBx p {
+    color: #fff;
+}
+
+.about .content .imgBx {
+    margin-left: 40px;
+}
+
+.about .content .imgBx img{
+    width: 100%;
+}
+
+.services .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
- 
+.services .content .servicesBx { 
+    padding: 40px 20px;
+    max-width: 340px;
+    margin: 20px;
+    transition: .5s;
+    text-align: center;
+    background-color: steelblue;
+}
+
+.services .content .servicesBx:hover{ 
+    background: #000;
+    color: #fff;
+}
+
+.services .content .servicesBx img { 
+    max-width: 80px;
+    transition: .5s;
+} 
+
+.services .content .servicesBx:hover img {
+    filter: inherit(1);
+}
+
+
+.services .content .servicesBx h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .5s;
+    color: #fff;
+}
+
+.services .content .servicesBx p {
+    color: #fff;
+}
+
+.services .content .servicesBx:hover h2 {
+    
+}
