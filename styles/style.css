@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,7 +29,7 @@
 
 section {
   padding: 100px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .banner {
@@ -79,7 +78,7 @@ section {
 
 .logoTexT {
   position: absolute;
-  top: 40px;
+  top: 10px;
   left: 100px;
   font-size: 1.2em;
   text-transform: uppercase;
@@ -236,11 +235,175 @@ section {
   content: '';
   position: absolute;
   left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: -10px;
   width: 60px;
   height: 4px;
   background-color: #000;
+}
+
+.title.white h2,
+.title.white p {
+  color: #fff;
+}
+
+.title.white h2::before {
+  background: #fff;
+}
+
+.about {
+  background: #000;
+}
+
+.about .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.about .content .textBx {
+  min-width: 49%;
+  width: 49%;
+}
+
+.about .content .textBx p {
+  color: #fff;
+}
+
+.about .content .imgBx {
+  margin-left: 40px;
+}
+
+.about .content .imgBx img {
+  width: 100%;
+}
+
+.services .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services .content .servicesBx {
+  padding: 40px 20px;
+  max-width: 340px;
+  margin: 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+  background-color: steelblue;
+}
+
+.services .content .servicesBx:hover {
+  background: #000;
+  color: #fff;
+}
+
+.services .content .servicesBx img {
+  max-width: 80px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.services .content .servicesBx:hover img {
+  -webkit-filter: inherit(1);
+          filter: inherit(1);
+}
+
+.services .content .servicesBx h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: #fff;
+}
+
+.services .content .servicesBx p {
+  color: #fff;
+  margin: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.work .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work .content .workBx {
+  position: relative;
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-align: center;
+}
+
+.work .content .workBx .imgBx,
+.work .content .workBx .textBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work .content .workBx .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.work .content .workBx .textBx {
+  background: #000;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.work .content .workBx:hover .textBx {
+  opacity: 1;
+}
+
+.work .content .workBx:hover .textBx h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 /*# sourceMappingURL=style.css.map */
