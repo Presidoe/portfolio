@@ -29,9 +29,8 @@
     
 }
 
-section {
-    padding: 100px;
-    min-height: 80vh;
+.section-padding {
+    padding: 150px;
 }
 
 .banner {
@@ -117,6 +116,15 @@ section {
     padding: 10px 30px;
     font-weight: 500;
     letter-spacing: 2px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.home-para {
+    line-height: 2;
 }
 
 .sidebar {
@@ -228,10 +236,25 @@ section {
      background: #000;
 }
 
+.content-about {
+    // background-color: red;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .about .content {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+}
+
+.about-para {
+    width: 100%;
+    padding: 1.5rem;
+    line-height: 2;
 }
 
 .about .content .textBx {
@@ -258,7 +281,7 @@ section {
     flex-wrap: wrap;
 }
 
-
+// Services Page
 .services .content .servicesBx { 
     padding: 40px 20px;
     max-width: 340px;
@@ -296,6 +319,16 @@ section {
     color: #fff;
     margin: 0;
     transition: .5s;
+}
+
+// Work Page
+.work {
+    margin-bottom: 10rem;
+}
+
+.work-para {
+    color: #fff;
+    padding: 1.5rem;
 }
 
 .work .content {
@@ -349,4 +382,69 @@ section {
     text-transform: uppercase;
     letter-spacing: 1px;
 } 
+
+// Contact Page 
+.contact {
+    background: steelblue;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact .contactForm {
+    position: relative;
+    width: 700px;
+    margin-top: 20px;
+}
+
+input {
+    background: none;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    padding: 1.5rem 1.1rem;
+    border: none;
+    outline: 1px solid #fff;
+    margin: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    color: #fff;
+    outline: 1px solid #fff;
+    margin: 1rem;
+    background: none;
+    padding: 1.5rem 1.1rem;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+button {
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: .5rem 1.5rem;
+    font-size: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #000;
+    outline: none;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
 

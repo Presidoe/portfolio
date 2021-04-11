@@ -15,7 +15,7 @@
     </header>
     <main>
         <!-- Homepage Section -->
-        <section class="banner" id="home">
+        <section class="banner section-padding" id="home">
             <div class="imgSidebar">
                 <img src="images/Presidoe-Okuguni1.jpg" alt="Presidoe Okuguni">
             </div>
@@ -25,7 +25,7 @@
                     <h4><span>Hello</span> I'm</h4>
                     <h2>Presidoe Okuguni</h2>
                     <h4>A UX/UI Web Designer.</h4>
-                    <p>Adaptable professional with strong work ethics and keenly interested in
+                    <p class="home-para">Adaptable professional with strong work ethics and keenly interested in
                         learning new things. I am an Adept multitasker capable of bringing simultaneous
                         web page creation and repair projects to completion with full accuracy and
                         efficiency. As a web designer, my objective is to make a positive impact on
@@ -35,30 +35,25 @@
                     <a href="#" class="btn">About Me</a>
                 </div>
                 <ul class="sci">
-                    <li><a href="www.facebook.com"><img src="images/Facebook-white.png" alt="Facebook"></a></li>
-                    <li><a href="www.instagram.com"><img src="images/intagram-white.png" alt="Instagram"></a></li>
-                    <li><a href="www.twitter.com"><img src="images/twitter-white.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.facebook.com/presidoeokuguni/"><img src="images/Facebook-white.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/presidoeokuguni/"><img src="images/intagram-white.png" alt="Instagram"></a></li>
+                    <li><a href="https://twitter.com/PresidoeOkuguni"><img src="images/twitter-white.png" alt="Twitter"></a></li>
                 </ul>
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="about section-padding" id="about">
             <div class="title white">
                 <h2>About Me</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
-            <div class="content">
+            <div class="content content-about">
                 <div class="textBx">
-                    <p>I am an Adept multitasker capable of bringing simultaneous
-                        web page creation and repair projects to completion with full accuracy and
-                        efficiency. As a web designer, my objective is to make a positive impact on
-                        clients, team members using my skills and experience to design compelling
-                        and attractive websites.<br><br> I am an Adept multitasker capable of bringing simultaneous
-                        web page creation and repair projects to completion with full accuracy and
-                        efficiency. As a web designer, my objective is to make a positive impact on
-                        clients, team members using my skills and experience to design compelling
-                        and attractive websites.
-                    </p>
+                    <p class="about-para">I care deeply about creating enjoyable, useful, and efficient 
+                        products that help people reach their goals. I can be as 
+                        involved in your project as you need me to be; from the seed of the idea, 
+                        to sketches, creative direction, design, and 
+                        front-end and WordPress build.      
                     </p>
                 </div>
                 <div class="imgBx">
@@ -68,9 +63,9 @@
         </section>
 
         <!-- Services Page -->
-        <section class="services" id="services">
+        <section class="services section-padding" id="services">
             <div class="title">
-                <h2>Services</h2>
+                <h2>What i can do</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Lorem ipsum dolor sit amet, 
                     consectetur adipisicing elit consectetur adipisicing.
                 </p>
@@ -104,7 +99,7 @@
         </section>
 
         <!-- Work Page -->
-        <section class="work" id="work">
+        <section class="work section-padding" id="work">
             <div class="title">
                 <h2>Recent Work</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -115,7 +110,7 @@
                         <img src="./images/project-1.jpg" alt="Project">
                     </div>
                     <div class="textBx">
-                        <h3>Ice-kol Kut Barbershop Website</h3>
+                        <p class="work-para">Ice-kol Kut Barbershop Website</p>
                     </div>
                 </div>
                 <div class="workBx">
@@ -123,7 +118,7 @@
                         <img src="./images/project-2.jpg" alt="Project">
                     </div>
                     <div class="textBx">
-                        <h3>All Time Junk Removal Website</h3>
+                        <p class="work-para">All Time Junk Removal Website</p>
                     </div>
                 </div>
                 <div class="workBx">
@@ -131,7 +126,7 @@
                         <img src="./images/nexthought-logo1.jpg" alt="Project">
                     </div>
                     <div class="textBx">
-                        <h3>Nextthought Productions Logo Design</h3>
+                        <p class="work-para">Nextthought Productions Logo Design</p>
                     </div>
                 </div>
                 <div class="workBx">
@@ -139,19 +134,31 @@
                         <img src="./images/all-time.jpg" alt="Project">
                     </div>
                     <div class="textBx">
-                        <h3>Logo Design</h3>
+                        <p class="work-para">Logo Design</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Us Page -->
-        <section class="contact" id="contact">
-            
+        <section class="contact section-padding" id="contact">
+            <div class="title white">
+                <h2>Get In Touch</h2>
+                <p>Let us work together to turn ideas into reality.</p>
+            </div>
+            <div class="contactForm">
+              <form action="">
+                  <input type="text" placeholder="First Name">
+                  <input type="text" placeholder="Last Name">
+                  <input type="email" placeholder="Email">
+                  <textarea placeholder="Message"></textarea>
+                  <button>SEND</button>
+              </form>
+            </div>
         </section>
 
         <!-- Sidebar Section -->
-        <section>
+        <section class="sidebar-section">
             <div class="sidebar">
                 <ul class="menu">
                     <li><a href="#home" onclick="toggleMenu()">HOME</a></li>
@@ -163,8 +170,9 @@
             </div>
         </section>        
     </main>
-    <footer>
 
+    <footer>
+        <p>&copy; Presidoe Okuguni 2021.</p>
     </footer>
 
     <script src="./script/script.js"></script>
